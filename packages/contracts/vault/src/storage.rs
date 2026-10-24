@@ -13,8 +13,7 @@ pub const PAUSED: Symbol = symbol_short!("PAUSED");
 pub const MIG_SNAP: Symbol = symbol_short!("MIG_SNAP");
 pub const MIG_ACTIVE: Symbol = symbol_short!("MIG_ACT");
 // Sentinel stored in MIG_ACTIVE when a migration snapshot is live.
-// 0
-inactive, 1 = active. Uses i128 because Soroban instance
+// 0 = inactive, 1 = active. Uses i128 because Soroban instance
 // storage serialisation for bool may behave unexpectedly.
 
 /// Minimum number of ledgers that must elapse between `begin_migration`
